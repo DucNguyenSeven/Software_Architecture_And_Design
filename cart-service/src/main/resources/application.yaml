@@ -1,0 +1,15 @@
+spring:
+  data:
+    redis:
+      host: punshub.top
+      port: 6379
+      timeout: 2000
+      lettuce:
+        pool:
+          max-active: 8 # So ket noi toi da
+          max-idle: 8 # So ket noi idle (ranh roi) toi da trong pool
+          min-idle: 2 # So ket noi toi thieu luon duy tri
+          max-wait: -1ms # Thoi gian cho toi da khi pool doi ( -1 = vo han)
+#      password:
+server:
+  port: 8086
